@@ -30,6 +30,10 @@ body {
   color: var(--titels-color);
 }
 
+.section {
+  padding: 94px 0;
+}
+
 .section-title {
   text-align: center;
   font-size: 36px;
@@ -37,10 +41,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
-
-.section {
-  padding: 94px 0;
 }
 
 .container {
@@ -204,7 +204,8 @@ body {
 
 /* Section Services */
 
-.services-img {
+.services-img,
+.team-img {
   display: block;
   /* Убрала зазор снизу */
 }
@@ -215,6 +216,16 @@ body {
   background-color: var(--light-background-color);
 }
 
+.team-list .list-item {
+  background: var(--secondary-text-color);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-subtitle {
   font-weight: 500;
   color: var(--titels-color);
@@ -222,6 +233,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-descr {
@@ -229,6 +241,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* Footer */
@@ -251,6 +264,8 @@ body {
 .footer-contact-link {
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* ===================  Portfolio  =================== */
 
 /* Section Portfolio */
 
