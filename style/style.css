@@ -31,10 +31,12 @@ body {
 }
 
 .section-title {
+  text-align: center;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .section {
@@ -48,14 +50,18 @@ body {
   margin-right: auto;
 }
 
-.flex-container {
-  display: flex;
-  min-height: 80px;
-  align-items: center;
-  justify-content: space-between;
+/* У всех флекс-єлементов правый марджин 30, кроме хедера. Вынесла в общий класс */
+.list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Header */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -88,6 +94,7 @@ body {
 }
 
 .nav-link {
+  display: block;
   padding: 35px 0;
   font-weight: 500;
   font-size: 14px;
@@ -123,21 +130,22 @@ body {
 
 .hero {
   background-color: var(--dark-background-color);
+  text-align: center;
 }
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 
+.hero .main-title {
+  margin-bottom: 30px;
+}
+
 .hero-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -156,6 +164,30 @@ body {
 
 /* Section Preferences */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.preferences-list,
+.services-list,
+.team-list {
+  display: flex;
+}
+
+.preferences-list .list-item,
+.team-list .list-item {
+  width: calc((100%-90px) / 4);
+}
+
 .preferences-title {
   font-size: 14px;
   line-height: 1.14;
@@ -168,6 +200,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+/* Section Services */
+
+.services-img {
+  display: block;
+  /* Убрала зазор снизу */
 }
 
 /* Section Team */
