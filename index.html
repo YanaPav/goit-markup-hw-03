@@ -21,37 +21,45 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="link-reset logo header-logo"
-          ><span class="logo logo-accent">Web</span>Studio</a
-        >
-        <ul class="ul-reset">
-          <li><a href="" class="link-reset current nav-link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link-reset nav-link">Портфолио</a></li>
-          <li><a href="" class="link-reset nav-link">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <ul class="ul-reset">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link-reset header-contact-link"
-            >info@devstudio.com</a
+    <header class="page-header">
+      <div class="container flex-container">
+        <nav class="main-nav">
+          <a href="./index.html" class="link-reset logo header-logo"
+            ><span class="logo logo-accent">Web</span>Studio</a
           >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link-reset header-contact-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <ul class="ul-reset link-list">
+            <li class="list-item">
+              <a href="" class="link-reset current nav-link">Студия</a>
+            </li>
+            <li class="list-item">
+              <a href="./portfolio.html" class="link-reset nav-link">Портфолио</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link-reset nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="ul-reset link-list">
+          <li class="list-item">
+            <a href="mailto:info@devstudio.com" class="link-reset header-contact-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="tel:+380961111111" class="link-reset header-contact-link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="section hero">
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-btn">Заказать услугу</button>
       </section>
 
-      <section class="preferences">
+      <section class="section preferences">
         <h2>Наши преимущества</h2>
         <!-- Заголовок скроем стилями -->
         <ul class="ul-reset">
@@ -82,7 +90,7 @@
         </ul>
       </section>
 
-      <section class="services">
+      <section class="section services">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="ul-reset">
           <!-- Если эти картинки должны вести на страници с более детальным описанием каждого вида деятельности, то оборачиваем их в ссылки -->
@@ -98,7 +106,7 @@
         </ul>
       </section>
 
-      <section class="team">
+      <section class="section team">
         <h2 class="section-title">Наша команда</h2>
         <ul class="ul-reset">
           <li>
