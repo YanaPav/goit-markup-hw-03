@@ -108,6 +108,7 @@ body {
 }
 
 .header-contact-link {
+  display: block;
   padding: 35px 0;
   font-weight: 500;
   font-size: 14px;
@@ -207,6 +208,8 @@ body {
 .services-img,
 .team-img {
   display: block;
+  max-width: 100%;
+  height: auto;
   /* Убрала зазор снизу */
 }
 
@@ -219,11 +222,10 @@ body {
 .team-list .list-item {
   background: var(--secondary-text-color);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-inner {
+  padding: 30px 0;
 }
 
 .team-subtitle {
@@ -234,6 +236,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-descr {
@@ -247,10 +250,13 @@ body {
 /* Footer */
 .footer {
   background-color: var(--dark-background-color);
+  padding: 60px 0;
 }
 
 .footer-logo {
+  display: block;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 
 .footer-contact {
@@ -262,7 +268,9 @@ body {
 }
 
 .footer-contact-link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 }
 
 /* ===================  Portfolio  =================== */
