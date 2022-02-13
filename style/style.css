@@ -24,6 +24,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
@@ -145,6 +151,7 @@ body {
 .hero {
   background-color: var(--dark-background-color);
   text-align: center;
+  padding: 200px 0;
 }
 .main-title {
   font-weight: 900;
@@ -160,6 +167,9 @@ body {
 }
 
 .hero-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -204,15 +214,6 @@ body {
 }
 
 /* Section Services */
-
-.services-img,
-.team-img,
-.portfolio-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  /* Убрала зазор снизу */
-}
 
 /* Section Team */
 
